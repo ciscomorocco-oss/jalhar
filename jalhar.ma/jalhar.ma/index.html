@@ -139,9 +139,9 @@
         <div style="position: relative; z-index: 2; height: 100%; display: flex; align-items: center;">
             <div class="hero-container" style="max-width: 1280px; margin: 0 auto; padding: 0 48px; width: 100%;">
                 <div style="max-width: 640px;">
-                    <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(245,195,0,.12); border: 1px solid rgba(245,195,0,.35); color: #F5C300; fontSize: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; padding: 6px 14px; margin-bottom: 20px;">
+                    <div style="display: inline-flex; align-items: center; gap: 8px; color: #F5C300; fontSize: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px;">
                         <span style="width: 6px; height: 6px; border-radius: 50%; background: #F5C300; animation: pulse 1.5s infinite;"></span>
-                        <span id="hero-tag">Vêtements de Sécurité Premium</span>
+                        <span>Catalogue 2026</span>
                     </div>
                     <h1 id="hero-title" class="hero-title" style="font-family: 'Barlow Condensed','Impact',sans-serif; font-weight: 900; font-size: clamp(52px,7vw,96px); line-height: 1.1; color: #fff; text-transform: uppercase; margin-bottom: 28px; letter-spacing: 2px;">
                         <span>MIEUX ÉQUIPÉ.</span>
@@ -596,7 +596,6 @@
         let currentSlide = 0;
         const slides = document.querySelectorAll('.hero-slide');
         const dots = document.querySelectorAll('#hero-dots button');
-        const tags = ["Vêtements de Sécurité Premium", "Vêtements Industriels", "Haute Visibilité & EPI"];
         const titles = [
             ["MIEUX ÉQUIPÉ.", "MIEUX PROTÉGÉ."],
             ["DES VÊTEMENTS POUR", "CHAQUE CHANTIER"],
@@ -614,7 +613,6 @@
             dots[currentSlide].style.width = '28px';
             dots[currentSlide].style.background = '#F5C300';
             
-            document.getElementById('hero-tag').innerText = tags[currentSlide];
             const titleH1 = document.getElementById('hero-title');
             titleH1.innerHTML = `<span>${titles[currentSlide][0]}</span><span style="display: block; color: #F5C300;">${titles[currentSlide][1]}</span>`;
         }
