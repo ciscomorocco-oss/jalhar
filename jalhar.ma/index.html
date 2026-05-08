@@ -77,10 +77,19 @@
         @media (max-width: 768px) {
             .hidden-mobile { display: none !important; }
             .burger-btn { display: block !important; }
-            .grid-4-2 { grid-template-columns: 1fr 1fr !important; }
+            .grid-4-2 { grid-template-columns: 1fr !important; }
             .grid-3-1 { grid-template-columns: 1fr !important; }
             .grid-2-1 { grid-template-columns: 1fr !important; }
             .footer-grid { grid-template-columns: 1fr !important; }
+            
+            /* Spécificités Mobile */
+            .hero-section { height: 85vh !important; min-height: 500px !important; }
+            .hero-container { padding: 0 24px !important; }
+            .hero-title { font-size: clamp(38px, 10vw, 52px) !important; }
+            .service-item { border-right: none !important; border-bottom: 1px solid #eee; padding: 20px 24px !important; }
+            .service-item:last-child { border-bottom: none; }
+            .section-header { margin-bottom: 32px !important; }
+            .contact-form-grid { grid-template-columns: 1fr !important; }
         }
 
         @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
@@ -119,7 +128,7 @@
     </header>
 
     <!-- HERO -->
-    <section id="home" style="position: relative; height: 100vh; min-height: 560px; overflow: hidden;">
+    <section id="home" class="hero-section" style="position: relative; height: 100vh; min-height: 560px; overflow: hidden;">
         <div id="hero-slides">
             <div class="hero-slide" style="position: absolute; inset: 0; background-image: url('https://images.pexels.com/photos/8961029/pexels-photo-8961029.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200'); background-size: cover; background-position: center; opacity: 1; transition: opacity .9s ease;"></div>
             <div class="hero-slide" style="position: absolute; inset: 0; background-image: url('https://images.pexels.com/photos/18111488/pexels-photo-18111488.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200'); background-size: cover; background-position: center; opacity: 0; transition: opacity .9s ease;"></div>
@@ -128,13 +137,13 @@
         <div style="position: absolute; inset: 0; background: linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.3) 70%,transparent 100%);"></div>
         <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: #F5C300;"></div>
         <div style="position: relative; z-index: 2; height: 100%; display: flex; align-items: center;">
-            <div style="max-width: 1280px; margin: 0 auto; padding: 0 48px; width: 100%;">
+            <div class="hero-container" style="max-width: 1280px; margin: 0 auto; padding: 0 48px; width: 100%;">
                 <div style="max-width: 640px;">
                     <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(245,195,0,.12); border: 1px solid rgba(245,195,0,.35); color: #F5C300; fontSize: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; padding: 6px 14px; margin-bottom: 20px;">
                         <span style="width: 6px; height: 6px; border-radius: 50%; background: #F5C300; animation: pulse 1.5s infinite;"></span>
                         <span id="hero-tag">Vêtements de Sécurité Premium</span>
                     </div>
-                    <h1 id="hero-title" style="font-family: 'Barlow Condensed','Impact',sans-serif; font-weight: 900; font-size: clamp(52px,7vw,96px); line-height: 1; color: #fff; text-transform: uppercase; margin-bottom: 28px; letter-spacing: 2px;">
+                    <h1 id="hero-title" class="hero-title" style="font-family: 'Barlow Condensed','Impact',sans-serif; font-weight: 900; font-size: clamp(52px,7vw,96px); line-height: 1.1; color: #fff; text-transform: uppercase; margin-bottom: 28px; letter-spacing: 2px;">
                         <span>MIEUX ÉQUIPÉ.</span>
                         <span style="display: block; color: #F5C300;">MIEUX PROTÉGÉ.</span>
                     </h1>
@@ -159,28 +168,28 @@
     <section style="background: #fafafa; border-bottom: 1px solid #eee;">
         <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px;">
             <div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 0;" class="grid-4-2">
-                <div style="display: flex; align-items: flex-start; gap: 16px; padding: 28px 32px; border-right: 1px solid #eee;">
+                <div class="service-item" style="display: flex; align-items: flex-start; gap: 16px; padding: 28px 32px; border-right: 1px solid #eee;">
                     <svg style="width: 28px; height: 28px; color: #F5C300; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     <div>
                         <div style="font-weight: 700; fontSize: 14px; color: #111; margin-bottom: 4px;">Devis Rapide</div>
                         <div style="fontSize: 12.5px; color: #888; line-height: 1.55;">Obtenez un devis personnalisé rapidement, adapté à vos besoins.</div>
                     </div>
                 </div>
-                <div style="display: flex; align-items: flex-start; gap: 16px; padding: 28px 32px; border-right: 1px solid #eee;">
+                <div class="service-item" style="display: flex; align-items: flex-start; gap: 16px; padding: 28px 32px; border-right: 1px solid #eee;">
                     <svg style="width: 28px; height: 28px; color: #F5C300; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2 2 2 0 012 2v.657m8.706-9.942a7.962 7.962 0 011.618 6.23 7.962 7.962 0 01-1.618 6.23M15.772 1.545a7.962 7.962 0 016.231 1.618 7.962 7.962 0 01-6.231-1.618M1.545 15.772a7.962 7.962 0 011.618-6.231 7.962 7.962 0 01-1.618 6.231M8.228 22.455a7.962 7.962 0 01-6.231-1.618 7.962 7.962 0 016.231 1.618"/></svg>
                     <div>
                         <div style="font-weight: 700; fontSize: 14px; color: #111; margin-bottom: 4px;">Livraison Nationale</div>
                         <div style="fontSize: 12.5px; color: #888; line-height: 1.55;">Expédition fiable et rapide, où que vous soyez.</div>
                     </div>
                 </div>
-                <div style="display: flex; align-items: flex-start; gap: 16px; padding: 28px 32px; border-right: 1px solid #eee;">
+                <div class="service-item" style="display: flex; align-items: flex-start; gap: 16px; padding: 28px 32px; border-right: 1px solid #eee;">
                     <svg style="width: 28px; height: 28px; color: #F5C300; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.033A12.02 12.02 0 003 14.661c0 5.097 3.308 9.422 7.877 11.002a11.935 11.935 0 003.123 0C18.692 24.083 22 19.758 22 14.661a12.02 12.02 0 00-1.382-5.703z"/></svg>
                     <div>
                         <div style="font-weight: 700; fontSize: 14px; color: #111; margin-bottom: 4px;">Paiements Sécurisés</div>
                         <div style="fontSize: 12.5px; color: #888; line-height: 1.55;">Transactions 100% protégées et certifiées.</div>
                     </div>
                 </div>
-                <div style="display: flex; align-items: flex-start; gap: 16px; padding: 28px 32px;">
+                <div class="service-item" style="display: flex; align-items: flex-start; gap: 16px; padding: 28px 32px;">
                     <svg style="width: 28px; height: 28px; color: #F5C300; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                     <div>
                         <div style="font-weight: 700; fontSize: 14px; color: #111; margin-bottom: 4px;">Support Réactif</div>
@@ -514,7 +523,7 @@
                 <p style="color: #999; fontSize: 14px; margin-top: 10px;">Dites-nous vos besoins — nous vous recontacterons sous 24 heures.</p>
             </div>
             <form onsubmit="event.preventDefault(); alert('Message envoyé !');">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;" class="grid-2-1">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;" class="contact-form-grid">
                     <div>
                         <label style="display: block; fontSize: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #888; margin-bottom: 6px;">Nom Complet *</label>
                         <input type="text" required placeholder="Jean Dupont" style="width: 100%; padding: 12px 14px; border: 1.5px solid #e0e0e0; fontSize: 13.5px; color: #111; background: #fafafa; outline: none;">
