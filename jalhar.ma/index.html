@@ -318,51 +318,321 @@
                 <button onclick="scrollToId('contact')" style="background: none; border: 1.5px solid #ccc; color: #555; fontSize: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 9px 22px; cursor: pointer;">Tout Voir →</button>
             </div>
         </div>
-        <div style="overflow-x: auto; padding-bottom: 16px; scrollbar-width: none;">
-            <div style="display: flex; gap: 16px; padding-left: max(24px,(100vw - 1280px)/2 + 24px); padding-right: 24px; width: max-content;">
-                <!-- Product Cards -->
+        <div style="position: relative;">
+            <div id="product-slider" style="overflow-x: auto; padding-bottom: 16px; scrollbar-width: none; -ms-overflow-style: none; scroll-behavior: smooth;">
+                <style>#product-slider::-webkit-scrollbar { display: none; }</style>
+                <div style="display: flex; gap: 16px; padding-left: max(24px,(100vw - 1280px)/2 + 24px); padding-right: 24px; width: max-content;">
+                <!-- Product Cards from CSV (Randomized) -->
                 <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
                     <div style="overflow: hidden; height: 260px;">
-                        <img src="https://images.pexels.com/photos/8487362/pexels-photo-8487362.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Work Jacket PROVO" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <img src="https://i.ibb.co/3yxYSXnJ/11-min.png" alt="MASTER 604-AC SHARK S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
                     <div style="padding: 14px 14px 18px;">
                         <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
-                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">Veste de Travail PROVO</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC SHARK S3 SRC</div>
                         <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
                     </div>
                 </div>
                 <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
                     <div style="overflow: hidden; height: 260px;">
-                        <img src="https://images.pexels.com/photos/8487797/pexels-photo-8487797.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Hi-Vis Vest Yellow" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <img src="https://i.ibb.co/qYfQ6xYk/13-min.png" alt="MASTER 604-AC SUMMER S1P SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
                     <div style="padding: 14px 14px 18px;">
                         <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
-                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">Hi-Vis Vest Yellow</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC SUMMER S1P SRC</div>
                         <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
                     </div>
                 </div>
                 <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
                     <div style="overflow: hidden; height: 260px;">
-                        <img src="https://images.pexels.com/photos/8487396/pexels-photo-8487396.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Hi-Vis Vest Orange" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <img src="https://i.ibb.co/bgx2jFFB/10-min.png" alt="MASTER 604-AC ART S1P SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
                     <div style="padding: 14px 14px 18px;">
                         <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
-                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">Hi-Vis Vest Orange</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC ART S1P SRC</div>
                         <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
                     </div>
                 </div>
                 <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
                     <div style="overflow: hidden; height: 260px;">
-                        <img src="https://images.pexels.com/photos/8486913/pexels-photo-8486913.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Colemane Work Jacket" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <img src="https://i.ibb.co/QFJ3V5Yq/18-min.png" alt="MASTER 604-AC FLEX LOW S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
                     <div style="padding: 14px 14px 18px;">
                         <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
-                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">Colemane Work Jacket</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC FLEX LOW S3 SRC</div>
                         <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
                     </div>
                 </div>
-                <!-- ... more products ... -->
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/VYXH8Sjn/4-min.png" alt="MASTER 604-AC PLUME S1P SRC BLUE" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC PLUME S1P SRC BLUE</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/nM08cW77/19-min.png" alt="MASTER 604-AC VELOUR S1P SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC VELOUR S1P SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/Zp4kfCJh/15-min.png" alt="MASTER 604-AC TRUKS S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC TRUKS S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/3bTV7xt/17-min.png" alt="MASTER 604-AC INDIA DESERT S1P SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC INDIA DESERT S1P SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/TM77wdwQ/6-min.png" alt="MASTER 604-AC VERONA S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC VERONA S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/hR2N0dQb/7-min.png" alt="MASTER 604-AC AZARO S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC AZARO S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/ndVgzx4/2-min.png" alt="MASTER 604-AC SABOT S2 SRC BLACK" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC SABOT S2 SRC BLACK</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/ZR6NZRd9/5-min.png" alt="MASTER 604-AC SABOT S2 SRC WHITE" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC SABOT S2 SRC WHITE</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/35NvbG0S/26-min.png" alt="MASTER 604-AC HYBRID S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC HYBRID S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/N2rq4z3J/28-min.png" alt="MASTER 604-AC MTF 004 LOW S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC MTF 004 LOW S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/SXRvXC1C/9-min.png" alt="MASTER 604-AC SAHARA S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC SAHARA S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/hRhmT72q/3-min.png" alt="MASTER 604-AC LONGUETTE S2 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC LONGUETTE S2 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/d4TRSdzj/12-min.png" alt="MASTER 604-AC FLEX FLUO S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC FLEX FLUO S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/N2pDfsDJ/1-min.png" alt="MASTER 604-AC VENEZIA S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC VENEZIA S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/TMT6LG8Y/29-min.png" alt="MASTER 604-AC INDIA S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC INDIA S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/XkkqKCRK/21-min.png" alt="MASTER 604-AC MTF 004 MID S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC MTF 004 MID S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/ycctqDVh/30-min.png" alt="MASTER 604-AC 8004 S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC 8004 S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/PZ3vBY7N/27-min.png" alt="MASTER 604-AC TEXAS MID S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC TEXAS MID S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/TBbLFBJQ/25-min.png" alt="MASTER 604-AC SAM S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC SAM S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/gFXhwQ52/14-min.png" alt="MASTER 604-AC EXTRA VELOUR S1P SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC EXTRA VELOUR S1P SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/9kp0d7P2/23-min.png" alt="MASTER 604-AC TEXAS VELOUR S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC TEXAS VELOUR S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/tTzvVqbx/22-min.png" alt="MASTER 604-AC DEFENDER S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC DEFENDER S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/1tGPZvLM/20-min.png" alt="MASTER 604-AC 7006 S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC 7006 S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/Fp3tDTS/24-min.png" alt="MASTER 604-AC 8004 VELOUR S1P SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC 8004 VELOUR S1P SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/sLwLfHn/16-min.png" alt="MASTER 604-AC RANGERS S3 SRC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC RANGERS S3 SRC</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
+                <div class="pcard" style="width: 210px; flex-shrink: 0; cursor: pointer; background: #f7f7f7;">
+                    <div style="overflow: hidden; height: 260px;">
+                        <img src="https://i.ibb.co/N6QkmnVx/8-min.png" alt="MASTER 604-AC PLUME S1P SRC RED" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div style="padding: 14px 14px 18px;">
+                        <div style="fontSize: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F5C300; margin-bottom: 4px;">Jalhar</div>
+                        <div style="fontSize: 13px; font-weight: 600; color: #111; line-height: 1.4;">MASTER 604-AC PLUME S1P SRC RED</div>
+                        <button onclick="scrollToId('contact')" style="margin-top: 12px; width: 100%; background: #F5C300; color: #111; border: none; font-weight: 700; fontSize: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 8px; cursor: pointer;">Demander Devis</button>
+                    </div>
+                </div>
             </div>
+        </div>
+        <!-- Slider Navigation -->
+        <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: flex-end; gap: 10px; margin-top: -20px; position: relative; z-index: 10;">
+            <button onclick="slideProducts(-1)" style="width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid #eee; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all .3s; color: #111;" onmouseover="this.style.background='#F5C300';this.style.borderColor='#F5C300'" onmouseout="this.style.background='#fff';this.style.borderColor='#eee'">
+                <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button onclick="slideProducts(1)" style="width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid #eee; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all .3s; color: #111;" onmouseover="this.style.background='#F5C300';this.style.borderColor='#F5C300'" onmouseout="this.style.background='#fff';this.style.borderColor='#eee'">
+                <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
         </div>
     </section>
 
@@ -695,6 +965,41 @@ Dimanche: Fermé</div>
                 header.style.borderBottomColor = 'transparent';
             }
         };
+
+        // Product Slider Navigation
+        function slideProducts(direction) {
+            const slider = document.getElementById('product-slider');
+            const scrollAmount = direction * 450; // Scroll roughly 2 cards at a time
+            slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+
+        // Add Grab-to-Scroll for Mouse
+        const slider = document.getElementById('product-slider');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.style.cursor = 'grabbing';
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.style.cursor = 'pointer';
+        });
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.style.cursor = 'pointer';
+        });
+        slider.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2; // scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+        });
     </script>
 </body>
 </html>
